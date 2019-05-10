@@ -1,0 +1,75 @@
+a{
+  color:#000;
+  font-size: 14px;
+}
+.top-bar .grid-container{
+  width: 100%;
+}
+
+.text-converter-container label{
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+.btns-container{
+  border:0;
+  margin: 0;
+}
+.button{
+  width:110px;
+}
+.button-large{
+  width:220px;
+}
+
+.btn-copy{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.copied{
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+.counter{
+  padding: 15px 0;
+}
+#txtConvert{
+  height: 400px;
+  resize: none;
+  margin: 0;
+}
+#txtConvert.converted{
+
+  border: 1px solid green;
+  box-shadow: 0 0 5px green;
+}
+.callout{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.container-txt{
+  position: relative;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
